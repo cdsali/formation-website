@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+    <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	
+      <link href="/assets/img/logo4.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+					<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+					 <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+    
+
+
+
+					<title>Formation detail</title>
+
+                      <link href="/assets/css/style.css" rel="stylesheet">
+
+<style>
+
+body{
+font-family: 'Century Gothic';
+}
+                 #formation_detail   .main-body {
+    padding: 15px;
+}
+#formation_detail .card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+#formation_detail .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+#formation_detail .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+#formation_detail .gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+#formation_detail .gutters-sm>.col,#formation_detail .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+#formation_detail.mb-3,#formation_detail .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+#formation_detail .bg-gray-300 {
+    background-color: #e2e8f0;
+}
+#formation_detail .h-100 {
+    height: 100%!important;
+}
+#formation_detail .shadow-none {
+    box-shadow: none!important;
+}
+
+#formation_detail  .progress-bar
+{
+background-color:rgba(0, 140, 109,1);
+}
+
+
+
+
+
+#myform {
+ width: max-content;  
+ height: max-content;  
+
+  background-color:red;
+  position:fixed;
+     background: rgba(255, 255, 255, 1);
+    box-shadow: rgba(0, 140, 109, 0.3) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset;
+  z-index:999;
+  
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  padding:25px;
+ display:none;
+ border:1px solid rgba(0,140,109,0.3);
+
+}
+
+
+#myform h4 {
+  color: black;
+}
+#myform input,
+#myform input[type="radio"] + label,
+#myform input[type="checkbox"] + label:before,
+#myform select option,
+#myform select {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+
+  
+ 
+ 
+}
+
+
+
+
+
+#myform input:focus {
+  outline: 0;
+  border-color: rgb(0,140,109);
+}
+#myform input:focus + .input-icon i {
+  color: rgb(0,140,109);
+}
+#myform input:focus + .input-icon:after {
+  border-right-color: rgb(0,140,109);
+}
+#myform input[type="radio"] {
+  display: none;
+}
+#myform input[type="radio"] + label,
+#myform select {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  float: left;
+  border-radius: 0;
+}
+#myform input[type="radio"] + label:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#myform input[type="radio"] + label:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#myform input[type="radio"] + label i {
+  padding-right: 0.4em;
+}
+#myform input[type="radio"]:checked + label,
+#myform input:checked + label:before,
+#myform select:focus,
+#myform select:active {
+  background-color: rgb(0,140,109);
+  color: #fff;
+  border-color: rgb(0,140,109);
+}
+#myform input[type="checkbox"] {
+  display: none;
+}
+#myform input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  padding-left: 1.6em;
+}
+#myform input[type="checkbox"] + label:before {
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  content: "";
+}
+#myform input[type="checkbox"] + label:after {
+  position: absolute;
+  top: 0.45em;
+  left: 0.2em;
+  font-size: 0.8em;
+  color: #fff;
+  opacity: 0;
+  font-family: 'Century Gothic';
+  content: "\f00c";
+}
+#myform input:checked + label:after {
+  opacity: 1;
+}
+#myform select {
+  height: 3.4em;
+  line-height: 2;
+}
+#myform select:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#myform select:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#myform select:focus,
+#myform select:active {
+  outline: 0;
+}
+#myform select option {
+  background-color:rgb(0,140,109);
+  color: #fff;
+}
+#myform .input-group {
+  margin-bottom: 1em;
+  zoom: 1;
+}
+#myform .input-group:before,
+#myform .input-group:after {
+  content: "";
+  display: table;
+}
+#myform .input-group:after {
+  clear: both;
+}
+#myform .input-group-icon {
+  position: relative;
+}
+#myform .input-group-icon input {
+  padding-left: 4.4em;
+}
+#myform .input-group-icon .input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.4em;
+  height: 3.4em;
+  line-height: 3.4em;
+  text-align: center;
+  pointer-events: none;
+}
+#myform .input-group-icon .input-icon:after {
+  position: absolute;
+  top: 0.6em;
+  bottom: 0.6em;
+  left: 3.4em;
+  display: block;
+  border-right: 1px solid rgb(0,140,109);
+  content: "";
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+#myform .input-group-icon .input-icon i {
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+#myform .container {
+  max-width: 38em;
+  padding: 1em 3em 2em 3em;
+  margin: 0em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+#myform .row {
+  zoom: 1;
+}
+#myform .row:before,
+#myform .row:after {
+  content: "";
+  display: table;
+}
+#myform .row:after {
+  clear: both;
+}
+#myform .col-half {
+  padding-right: 10px;
+  float: left;
+  width: 50%;
+}
+#myform .col-half:last-of-type {
+  padding-right: 0;
+}
+#myform .col-third {
+  padding-right: 10px;
+  float: left;
+  width: 33.33333333%;
+}
+#myform .col-third:last-of-type {
+  padding-right: 0;
+}
+@media only screen and (max-width: 540px) {
+  #myform .col-half {
+    width: 100%;
+    padding-right: 0;
+  }
+
+   #myform {
+    width: 100vw;
+    height:(100vh);
+    
+    
+     top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+     box-shadow: rgba(0, 140, 109, 0.3) 0px 30px 60px -20px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -20px inset;
+
+
+      position: fixed;
+        overflow: hidden;
+     
+        
+        transition: 0.3s;
+        border:2px solid rgba(0,140,109,0.3);
+      
+
+  }
+
+ #myform form h4 {font-size:15px;}
+ #myform .input-group-icon .input-icon {
+
+  width: 3.4em;
+  height: 2.5em;
+  line-height: 2.5em;
+ 
+}
+
+#myform input,
+#myform input[type="radio"] + label,
+#myform input[type="checkbox"] + label:before,
+#myform select option,
+#myform select {
+
+height:2.5em;
+ 
+}
+
+#myform select option,
+#myform select,#myform input[type="radio"] + label,
+#myform input[type="checkbox"] + label:before {
+
+ padding: 0.25em;
+
+}
+
+#success img
+{
+
+width:25px;
+height:25px;
+display:none;
+
+}
+
+#BTNclose
+{
+
+ 
+    top: 50px;
+    right: 0px;
+    
+
+}
+
+
+  
+}
+
+
+#BTNclose
+{
+border:0;
+background-color:transparent;
+width:40px;
+height:40px;
+ position: absolute;
+ 
+    top: 0px;
+    right: 0px;
+}
+
+
+#BTNclose:hover
+{
+
+background-color:rgb(0, 140, 109);
+color:white;
+
+}
+
+
+#success
+{
+
+
+position:relative;
+z-index:999999;
+
+text-align:center
+
+}
+
+#success img
+{
+width:80px;height:auto; position: absolute;
+  top: -40px;
+  bottom: 0;
+  margin: auto 0;
+  }
+#error{display:none;}
+#error label{font-weight:bold;}
+
+
+
+</style>
+
+
+				</head>
+	<body>
+
+		 <%- include('header.ejs') %>
+		
+		
+<div class="container" id="formation_detail" style="margin-top:140px">
+    <div class="main-body">
+    
+    <div class="section-title" data-aos="fade-up">
+          <h2>Formation</h2>
+          <p  style="color:rgb(0,140,109)"><%= detail[0].TITLE_FOR %></p>
+        </div>
+    
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="/assets/img/<%= detail[0].IMAGE_F %>" alt="Admin" class="rounded-circle" width="150">
+                    <div class="mt-3">
+                      <h4>PR. <%= detail[0].NOM_F %>  <%= detail[0].PRENOM_F %></h4>
+                    
+                      <p class="text-muted font-size-sm"> <%= detail[0].FONCTION_F %></p>
+
+                       <p class="text-muted font-size-sm"> <%= detail[0].DESC_F %></p>
+                   
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-3">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-0"><i class="bx bx-help-circle icon-help"></i>Durée</h6>
+                    <span class="text-secondary"> <%= detail[0].DUREE_FOR %></span>
+                  </li>
+                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-0"><i class="bx bx-help-circle icon-help"></i>Lieu</h6>
+                    <span class="text-secondary"> <%= detail[0].LIEU_FOR %></span>
+                  </li>
+                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-0"><i class="bx bx-help-circle icon-help"></i>Formateur</h6>
+                    <span class="text-secondary"> <%= detail[0].NOM_F %>  <%= detail[0].PRENOM_F %></span>
+                  </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-0"><i class="bx bx-help-circle icon-help"></i>Type</h6>
+                    <span class="text-secondary"> <%= detail[0].TYPE_FOR %></span>
+                  </li>
+                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-0"><i class="bx bx-help-circle icon-help"></i>Prix</h6>
+                    <span class="text-secondary"> <%= detail[0].PRIX_FOR %> DA</span>
+                  </li>
+
+
+
+
+         
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Qui peut se former ?</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                    <ul>
+                      <li> <%= detail[0].QUI_FOR %> </li>
+
+
+                        </ul>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">A la fin de la formation</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                     <%= detail[0].FIN_FOR %>
+                    </div>
+                  </div>
+                  <hr>
+
+                    <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Contact</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= detail[0].CONTACT_F %>
+                    </div>
+                  </div>
+                  <hr>
+               
+             
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <a class="button-71" id="BTNins">Inscription </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gutters-sm">
+
+              <% function programme(text)  {let gen = text.split("/");
+                  var result = new Array(gen.length);
+                  for(var i = 0; i< result.length; i++){
+                       result[i] =gen[i].split("*");
+                                                       };
+                                             return result;}; let tr=programme(detail[0].PROGRAMME_FOR);
+                  for(var i=0;i<tr.length;i++) {  if(i%2==0) { %>
+                <div class="col-sm-6 mb-3">
+                  <div class="card h-100">
+                    <div class="card-body">
+
+                      <h4 class="d-flex align-items-center mb-3"><% if(i==0) { %>Programme <% } %></h4>
+
+
+                      <small> <%= tr[i] %> <%= i %></small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      
+                       <%  for(var j=0;j < tr[i+1].length;j++) { if(tr[i+1][j]!="") {%>
+                      <small><%= tr[i+1][j] %></small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+
+                       <% }} %>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+
+               
+
+                   <% }} %>
+
+               
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+		
+		
+
+
+
+
+        
+        <div class="container" id="myform" >
+         
+          <button id="BTNclose" >  <i class="fa fa-close fa-lg"></i>    </button>
+      
+        
+  <form method="post" >
+
+ 
+  
+    
+    <div id="success" >
+         <img src="/assets/img/R2.png" alt="valider"   >  
+    </div>
+
+    <h4>INSCRIPTION</h4>
+    <div class="row">
+     
+       
+      
+       <div class="input-group input-group-icon ">
+          <input type="text"  name="NAME_INS"  placeholder="Nom et Prenom" required />   
+          <div class="input-icon"><i class="fa fa-user"></i></div>    
+        </div>
+      <div class="input-group input-group-icon">
+        <input type="email" name="EMAIL_INS" placeholder="Email" />
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+
+       <div class="input-group input-group-icon">
+          <input type="text"  name="CONTACT_INS"  pattern="(00213|\+213|0)(5|6|7)[0-9]{8}"  placeholder="telephone"/>   
+          <div class="input-icon"><i class="fa fa-phone"></i></div>    
+        </div>
+       
+      
+    </div>
+    <div class="row">
+      <div class="col-half">
+        <h4>Date de Naissance</h4>
+        <div class="input-group">
+        <input type="date"  name="DATENAI_INS" value = "2014-02-09">
+        </div>
+      </div>
+      <div class="col-half">
+        <h4>Genre</h4>
+        <div class="input-group">
+          <input id="gender-male" type="radio" name="GENDER_INS" value="male"/>
+          <label for="gender-male">Male</label>
+          <input id="gender-female" type="radio" name="GENDER_INS" value="female"/>
+          <label for="gender-female">Female</label>
+        </div>
+      </div>
+
+
+     
+
+
+
+
+
+
+
+    </div>
+    <div class="row">
+      
+  
+      <div class="col-half">
+        <div class="input-group input-group-icon">
+          <input type="text" name="ADDRESS_INS" placeholder="Address" required/>
+          <div class="input-icon"><i class="fa fa-location-arrow"></i></div>   
+        </div>
+      </div>
+      <div class="col-half">
+        <div class="input-group">
+          <select name="WILAYA_INS">
+            <option>Alger</option>
+            <option>Oran</option>
+            <option>Alger</option>
+            <option>Oran</option>
+            <option>Alger</option>
+            <option>Oran</option>
+            <option>Alger</option>
+            <option>Oran</option>
+            <option>Alger</option>
+            <option>Oran</option>
+            <option>Alger</option>
+            <option>Alger</option>
+            <option>Alger</option>
+            <option>Alger</option>
+            <option>Alger</option>
+            <option>Alger</option>
+            <option>Alger</option>
+
+            <option>Oran</option>
+            <option>Oran</option>
+            <option>Oran</option>
+            <option>Oran</option>
+            <option>Oran</option>
+            <option>Oran</option>
+            <option>Oran</option>
+          </select>
+
+           <select name="TITLE_INS">
+             <option>Professeur</option>
+            <option>Docteur</option>
+            <option>Résident</option>
+            <option>Résident</option>
+             <option>Etudiant</option>
+            
+          </select>
+         
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Remarque</h4>
+        <div class="col-half">
+        <div class="input-group">
+         <textarea  name="REMARQUE_INS" style="width:100%" ></textarea>
+        
+        </div>
+      </div>
+
+       
+       <div class="col-half">
+        <div class="input-group">
+          <button  type="submit" style="width:100%"  id="BTNvalider" class="button-71" >Valider</button>
+          
+
+        </div>
+      </div>
+      
+       <div id="error" class="mb-0"><i class="fa fa-thumbs-up"></i> <label></label></div>
+
+
+       
+
+
+
+    </div>
+
+
+
+    <div class="row" style="display:none;">
+      <h4>Terms and Conditions</h4>
+      <div class="input-group">
+        <input id="terms" type="checkbox"/>
+        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+         $("#BTNclose").click(function(){
+             $("#myform").hide();
+             $("#error").hide();
+             $('#myform form')[0].reset();
+                                         });
+
+
+          $("#BTNins").click(function(){
+             $("#myform").show();
+           
+         
+                                         });
+
+
+
+        const $form = $('#myform form');
+
+$form.on('submit', submitHandler)
+
+function submitHandler (e) {
+  e.preventDefault()
+
+  $.ajax({
+    url: '/formation/inscription/<%= detail[0].ID_FOR %>',
+    type:'POST',
+    data: $form.serialize()
+  }).done(response => {
+    if(response=="1") { $("#error").show(); $("#error label").text("operation valide"); $("#error").css("color","green");
+     $("#error i").removeClass('fa-exclamation');
+    $("#error i").addClass('fa-thumbs-up');
+     $('#myform form')[0].reset();
+  
+    
+  
+      
+     }
+
+    else { $("#error").show(); 
+     $("#error i").removeClass('fa-thumbs-up');
+    $("#error i").addClass('fa-exclamation');
+    $("#error label").text("erreur email"); $("#error").css("color","red");}
+  })
+}
+
+
+
+
+
+
+
+
+
+
+    
+    });
+
+</script>
+
+
+       
+
+          <script src="/assets/js/main.js"></script>
+
+
+	</body>
+</html>

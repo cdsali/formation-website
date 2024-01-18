@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\assets",
+    "\\public\\assets\\css",
+    "\\public\\assets\\js",
+    "\\routes",
+    "\\views"
+  ],
+  "SelectedNode": "\\routes\\admin.js",
+  "PreviewInSolutionExplorer": false
+}

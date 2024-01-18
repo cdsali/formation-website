@@ -1,0 +1,1350 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ETABIBO</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo4.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+
+   <!--
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
+    
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+       -->
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+  
+
+
+  .scrollable {
+    overflow-y: auto;
+    max-height: 200px;
+    padding-right: 15px;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+#myform {
+ width: max-content;  
+ height: max-content;  
+
+  background-color:red;
+  position:fixed;
+     background: rgba(255, 255, 255, 1);
+    box-shadow: rgba(0, 140, 109, 0.3) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset;
+  z-index:999;
+  
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  padding:25px;
+ display:none;
+ border:1px solid rgba(0,140,109,0.3);
+
+}
+
+
+#myform h4 {
+  color: black;
+}
+#myform input,
+#myform input[type="radio"] + label,
+#myform input[type="checkbox"] + label:before,
+#myform select option,
+#myform select {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+
+  
+ 
+ 
+}
+
+
+
+
+
+#myform input:focus {
+  outline: 0;
+  border-color: rgb(0,140,109);
+}
+#myform input:focus + .input-icon i {
+  color: rgb(0,140,109);
+}
+#myform input:focus + .input-icon:after {
+  border-right-color: rgb(0,140,109);
+}
+#myform input[type="radio"] {
+  display: none;
+}
+#myform input[type="radio"] + label,
+#myform select {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  float: left;
+  border-radius: 0;
+}
+#myform input[type="radio"] + label:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#myform input[type="radio"] + label:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#myform input[type="radio"] + label i {
+  padding-right: 0.4em;
+}
+#myform input[type="radio"]:checked + label,
+#myform input:checked + label:before,
+#myform select:focus,
+#myform select:active {
+  background-color: rgb(0,140,109);
+  color: #fff;
+  border-color: rgb(0,140,109);
+}
+#myform input[type="checkbox"] {
+  display: none;
+}
+#myform input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  padding-left: 1.6em;
+}
+#myform input[type="checkbox"] + label:before {
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  content: "";
+}
+#myform input[type="checkbox"] + label:after {
+  position: absolute;
+  top: 0.45em;
+  left: 0.2em;
+  font-size: 0.8em;
+  color: #fff;
+  opacity: 0;
+  font-family: 'Century Gothic';
+  content: "\f00c";
+}
+#myform input:checked + label:after {
+  opacity: 1;
+}
+#myform select {
+  height: 3.4em;
+  line-height: 2;
+}
+#myform select:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#myform select:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#myform select:focus,
+#myform select:active {
+  outline: 0;
+}
+#myform select option {
+  background-color:rgb(0,140,109);
+  color: #fff;
+}
+#myform .input-group {
+  margin-bottom: 1em;
+  zoom: 1;
+}
+#myform .input-group:before,
+#myform .input-group:after {
+  content: "";
+  display: table;
+}
+#myform .input-group:after {
+  clear: both;
+}
+#myform .input-group-icon {
+  position: relative;
+}
+#myform .input-group-icon input {
+  padding-left: 4.4em;
+}
+#myform .input-group-icon .input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.4em;
+  height: 3.4em;
+  line-height: 3.4em;
+  text-align: center;
+  pointer-events: none;
+}
+#myform .input-group-icon .input-icon:after {
+  position: absolute;
+  top: 0.6em;
+  bottom: 0.6em;
+  left: 3.4em;
+  display: block;
+  border-right: 1px solid rgb(0,140,109);
+  content: "";
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+#myform .input-group-icon .input-icon i {
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+#myform .container {
+  max-width: 38em;
+  padding: 1em 3em 2em 3em;
+  margin: 0em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+#myform .row {
+  zoom: 1;
+}
+#myform .row:before,
+#myform .row:after {
+  content: "";
+  display: table;
+}
+#myform .row:after {
+  clear: both;
+}
+#myform .col-half {
+  padding-right: 10px;
+  float: left;
+  width: 50%;
+}
+#myform .col-half:last-of-type {
+  padding-right: 0;
+}
+#myform .col-third {
+  padding-right: 10px;
+  float: left;
+  width: 33.33333333%;
+}
+#myform .col-third:last-of-type {
+  padding-right: 0;
+}
+@media only screen and (max-width: 540px) {
+  #myform .col-half {
+    width: 100%;
+    padding-right: 0;
+  }
+
+   #myform {
+    width: 100vw;
+    height:(100vh);
+    
+    
+     top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+     box-shadow: rgba(0, 140, 109, 0.3) 0px 30px 60px -20px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -20px inset;
+
+
+      position: fixed;
+        overflow: hidden;
+     
+        
+        transition: 0.3s;
+        border:2px solid rgba(0,140,109,0.3);
+      
+
+  }
+
+ #myform form h4 {font-size:15px;}
+ #myform .input-group-icon .input-icon {
+
+  width: 3.4em;
+  height: 2.5em;
+  line-height: 2.5em;
+ 
+}
+
+#myform input,
+#myform input[type="radio"] + label,
+#myform input[type="checkbox"] + label:before,
+#myform select option,
+#myform select {
+
+height:2.5em;
+ 
+}
+
+#myform select option,
+#myform select,#myform input[type="radio"] + label,
+#myform input[type="checkbox"] + label:before {
+
+ padding: 0.25em;
+
+}
+
+#success img
+{
+
+width:25px;
+height:25px;
+display:none;
+
+}
+
+#BTNclose
+{
+
+ 
+    top: 50px;
+    right: 0px;
+    
+
+}
+
+
+.scrollable {
+    overflow-y: auto;
+    max-height: 120px;
+    padding-right: 15px;
+}
+
+  
+}
+
+
+#BTNclose
+{
+border:0;
+background-color:transparent;
+width:40px;
+height:40px;
+ position: absolute;
+ 
+    top: 0px;
+    right: 0px;
+}
+
+
+#BTNclose:hover
+{
+
+background-color:rgb(0, 140, 109);
+color:white;
+
+}
+
+
+#success
+{
+
+
+position:relative;
+z-index:999999;
+
+text-align:center
+
+}
+
+#success img
+{
+width:80px;height:auto; position: absolute;
+  top: -40px;
+  bottom: 0;
+  margin: auto 0;
+  }
+#error{display:none;}
+#error label{font-weight:bold;}
+
+#details img
+{
+cursor: -webkit-grab; cursor: grab;
+}
+
+
+</style>
+
+
+ 
+
+
+</head>
+
+<body>
+
+ <%- include('header.ejs') %>
+
+  <section id="hero" >
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out" id="part1">
+            <h1>Formations etabibo</h1>
+            <h2 id="tst">Apprenez, grandissez, excellez avec Etabibo, votre source de formation en médecine</h2>
+
+            <div class="text-center text-lg-start">
+              <a href="#formation" class="button-71" >Commencer</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-6 order-1 order-lg-2 " data-aos="zoom-out" data-aos-delay="300" id="image-hero">
+          <img src="assets/img/2.png" class="img-fluid " alt="" >
+
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+ <main id="main" >
+
+
+    
+   
+
+
+
+
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+            <a href="https://www.youtube.com/watch?v=KS0rsDgMdfc" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+            <h3>Etabibo</h3>
+            <p>ETABIBO est une entreprise de prestations et services dans le domaine medical et bien-etre.</p>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-first-aid"></i></div>
+              <h4 class="title"><a href="">sensibilisation</a></h4>
+              <p class="description">
+                Chez ETABIBO, notre passion est de fournir des services de qualité et des prestations exceptionnelles dans le domaine de la santé et du bien-être. Nous sommes fiers de travailler avec des professionnels de la santé qui cherchent à améliorer leur pratique grâce à l'expertise de leurs pairs, reconnus dans leur domaine. Nous organisons des débats pour sensibiliser et informer les professionnels de la santé sur des sujets scientifiques et sociétaux importants.
+  
+              </p>
+            </div>
+
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+               <div class="icon"><i class="bx bx-heart"></i></div>
+                <h4 class="title"><a href="">Les week end de la sante</a></h4>
+              <p class="description">
+                Nous proposons également des ateliers hebdomadaires appelés "week-ends de la santé" pour aider les médecins à acquérir de nouvelles compétences et à consolider celles qu'ils ont déjà acquises. Ces ateliers sont animés par des docteurs et des professeurs renommés qui agissent en tant que formateurs.
+              </p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bx bxs-calendar"></i></div>
+              <h4 class="title"><a href="">Evenements</a></h4>
+              <p class="description">
+                Chez ETABIBO, nous croyons que l'organisation d'événements scientifiques, culturels et de congrès est un moyen efficace de promouvoir la santé et le bien-être. Nous travaillons également en partenariat avec des laboratoires pharmaceutiques pour fournir des représentations de haute qualité.
+
+              </p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon"><i class="bx bxs-mobile"></i></div>
+              <h4 class="title"><a href="">Etabibo application</a></h4>
+              <p class="description">
+                Pour faciliter l'accès aux soins de santé, nous avons développé une application de prise de rendez-vous médicaux gratuite pour les professionnels de la santé et le grand public. Chez ETABIBO, nous nous engageons à offrir des solutions pratiques et accessibles pour améliorer la santé et le bien-être de tous.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+   
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bx bxs-user"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Intervenants</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Ateliers</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bx bxs-user"></i>
+              <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Etudiants</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bx bxs-calendar"></i>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Evenements</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+  
+
+
+          
+
+    <!-- ======= Team Section ======= -->
+    <section id="formation" class="formation" >
+      <div class="container">
+
+
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Atelier</h2>
+          <p  style="color:rgb(0,140,109)">NOS ATELIERS</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+
+
+<% for(var i=0;i<data.length;i++ ) { %>
+ 
+
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4"  onclick="mylinkfunction(<%= data[i].ID_FOR %>)">
+          <div class="card text-white card-has-bg click-col" id="F<%= data[i].ID_FOR %>" style="background-image:url('assets/img/<%= data[i].IMAGE_FOR %>');">
+         <img class="card-img d-none" src="assets/img/L2.png" alt=""> </a> 
+        <div class="card-img-overlay d-flex flex-column">
+         <div class="card-body">
+         <div class="alltitle">
+            <small class="card-meta mb-2 "> <%= data[i].DUREE_FOR %> </small>
+             <h4 class="card-title mt-0 "><a class="text-white" > <%= data[i].TITLE_FOR %></a></h4>
+           <small ><i class="bx bx-money"></i> <%= data[i].PRIX_FOR %> DA</small> 
+            </div >
+        
+           <p class="desc cache" href="formation/<%= data[i].ID_FOR %>">   <%= data[i].DESC_FOR %> </p> 
+          </div>
+          <div class="card-footer">
+          
+           <div class="media">
+  <img class="mr-3 rounded-circle" src="assets/img/<%= data[i].IMAGE_F %>" alt="Generic placeholder image" style="max-width:50px">
+  <div class="media-body">
+  <h6 class="my-0 text-white d-block"><%= data[i].NOM_F %> <%= data[i].PRENOM_F %></h6>
+     <small><%= data[i].DATE_FOR %></small>
+  </div>
+
+</div>
+          </div>
+          
+        </div>
+
+      </div>
+          </div>
+          
+          
+<% } %>
+          
+
+      
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+
+
+
+    <section id="yoga" class="formation" >
+      <div class="container">
+
+
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Yoga</h2>
+          <p  style="color:rgb(0,140,109)">COURS DE YOGA</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+
+
+<% for(var i=0;i<data4.length;i++ ) { %>
+ 
+
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4"  onclick="mylinkfunction(<%= data4[i].ID_FOR %>)">
+          <div class="card text-white card-has-bg click-col" id="F<%= data4[i].ID_FOR %>" style="background-image:url('assets/img/<%= data4[i].IMAGE_FOR %>');">
+         <img class="card-img d-none" src="assets/img/L2.png" alt=""> </a> 
+        <div class="card-img-overlay d-flex flex-column">
+         <div class="card-body">
+         <div class="alltitle">
+            <small class="card-meta mb-2 "> <%= data4[i].DUREE_FOR %> </small>
+             <h4 class="card-title mt-0 "><a class="text-white" > <%= data4[i].TITLE_FOR %></a></h4>
+           <small ><i class="bx bx-money"></i> <%= data4[i].PRIX_FOR %> DA</small> 
+            </div >
+        
+           <p class="desc cache" href="formation/<%= data4[i].ID_FOR %>">   <%= data4[i].DESC_FOR %> </p> 
+          </div>
+          <div class="card-footer">
+          
+           <div class="media">
+  <img class="mr-3 rounded-circle" src="assets/img/<%= data4[i].IMAGE_F %>" alt="Generic placeholder image" style="max-width:50px">
+  <div class="media-body">
+  <h6 class="my-0 text-white d-block"><%= data4[i].NOM_F %> <%= data4[i].PRENOM_F %></h6>
+     <small><%= data4[i].DATE_FOR %></small>
+  </div>
+
+</div>
+          </div>
+          
+        </div>
+
+      </div>
+          </div>
+          
+          
+<% } %>
+          
+
+      
+
+        </div>
+
+      </div>
+    </section><!-- yoga Section -->
+
+
+
+
+
+
+
+
+
+
+
+      <section >
+     <div class="container" >
+         <div class="section-title" data-aos="fade-up">
+          <h2>Events</h2>
+          <p  style="color:rgb(0,140,109)">Nos Evenements</p>
+        </div> 
+        </div>
+          </section>
+
+    
+
+   <section id="details" class="details aos-init aos-animate" data-aos="fade-up">
+
+
+
+     <button id="left-event" onclick="GoToNext(-1,<%= data2.length %>)"><i class="bx bx-left-arrow"></i></button>
+    
+     <button id="right-event" onclick="GoToNext(1,<%= data2.length %>)"><i class="bx bx-right-arrow"></i></button>
+
+      <div class="container">
+      
+        <div style="border:0;border-radius:10px;">
+           
+
+             <% for(var i=0;i<data2.length;i++ ) { if(i==0) {  %>
+
+  <div class="row content"  id="EVN<%= i %>">
+    <% } else {  %>
+             <div class="row content cache"  id="EVN<%= i %>" >
+      <% }  %>
+
+          <div class="col-md-4" style="text-align:center">
+             
+              
+            <img src="assets/img/<%= data2[i].IMAGE1_EVN %>" id="i5<%= data2[i].ID_EVN %>" class="img-fluid" alt="" style="  border-radius: 10px;height: 300px;">
+            
+          </div>
+          <div class="col-md-8 pt-4">
+            <h3><%= data2[i].TITLE_EVN %></h3>
+            <p class="fst-italic scrollable" >
+             <%= data2[i].TEXT_EVN %>
+
+
+            </p>
+   
+            
+          </div>
+      
+
+ 
+
+
+    <div class="col-md-12" style="text-align:center;margin-top:10px;&quot;">
+     <img id="i1<%= data2[i].ID_EVN %>" class="image" src="assets/img/<%= data2[i].IMAGE2_EVN %>" alt="" onclick="SetImage('1',<%= data2[i].ID_EVN %>)">
+     <img id="i2<%= data2[i].ID_EVN %>" class="image" src="assets/img/<%= data2[i].IMAGE3_EVN %>" alt="" onclick="SetImage('2',<%= data2[i].ID_EVN %>)">
+     <img id="i3<%= data2[i].ID_EVN %>" class="image" src="assets/img/<%= data2[i].IMAGE4_EVN %>" alt="" onclick="SetImage('3',<%= data2[i].ID_EVN %>)">
+     <img id="i4<%= data2[i].ID_EVN %>" class="image" src="assets/img/<%= data2[i].IMAGE5_EVN %>" alt="" onclick="SetImage('4',<%= data2[i].ID_EVN %>)">
+
+     </div>
+       </div>
+ <div>
+ <% } %>
+
+</div>
+
+      
+    </section>
+
+    
+
+
+    <div class="container" id="ourteam">
+   
+     <div class="section-title" data-aos="fade-up">
+          <h2>INTERVENANT</h2>
+          <p style="color:rgb(0,140,109)">Nos INTERVENANT</p>
+     </div>
+
+		<div class="row">
+			<div class="col-sm-6 offset-sm-3 mt-4 mb-4">
+				
+				<p class="text-center">Vous êtes un professionnel de la formation et souhaitez exploiter tout le potentiel des nouvelles technologies pour réussir votre transformation digitale.
+
+ETABIBO vous propose une solution simple pour partager et mettre en avant vos programmes ainsi que les cours pour que ça soit présenté en e-Learning ou en présentiel.</p>
+<div style="text-align:center">
+<a href="#" id="BTNrejoindre" class="button-71">Nos rejoindre</a>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+         
+            <% for(var i=0;i<data3.length;i++ ) {   %>
+			<div class="col-md-4">
+				<div class="card-box text-center">
+					<div class="user-pic" >
+						
+                         <a href="<%= data3[i].VIDEO_F %>"  class="glightbox play-btn"> <img src="assets/img/<%= data3[i].IMAGE_F %>" class="img-fluid" alt="User Pic" >
+                         
+                         </a>
+                      
+                         
+					</div>
+					<h4><%= data3[i].NOM_F %> <%= data3[i].PRENOM_F %> </h4>
+					<h6><%= data3[i].FONCTION_F %></h6>
+					<hr>
+					<p><%= data3[i].DESC_F %></p>
+					<hr>
+					
+				</div>
+			</div>
+
+
+             <% }   %>
+
+		</div>
+	</div>
+
+  
+
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>FAQ</h2>
+          <p style="color:rgb(0,140,109)">Questions frequentes</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+                   Qui peut participer aux formations ETABIBO?
+              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Les formations ETABIBO sont destinées aux médecins et étudiants.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+                    Comment puis-je m'inscrire à une formation ETABIBO?
+              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Vous pouvez vous inscrire à une formation ETABIBO en remplissant le formulaire d'inscription sur notre site web ou en nous contactant directement.
+
+                       </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">
+                  Quels sont les domaines de formation couverts par ETABIBO?
+             <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 ETABIBO propose des formations pour les médecins dans le domaine médical et bien-être.
+                </p>
+              </div>
+            </li>
+
+           
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p style="color:rgb(0,140,109)">Contact</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Address:</h4>
+                <p>Residence CMB N 158 Oued TARFA - El Achour</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@etabibo.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Telephone:</h4>
+                <p>+213 (0)23 245 386 | +213 (0)659 570 327 | +213 (0)770 593 119</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+            <form  method="post"  class="node-email">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="NOM_C" class="form-control"  placeholder="NOM" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="EMAIL_C" placeholder="EMAIL" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="SUBJECT_C"  placeholder="SUJET" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="MESSAGE_C" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre message a été envoyé. Merci!</div>
+              </div>
+              <div class="text-center "><button class="button-71" type="submit">Envoyer</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+    <div class="container" id="myform" >
+         
+          <button id="BTNclose" >  <i class="fa fa-close fa-lg"></i>    </button>
+      
+        
+  <form method="post" >
+
+ 
+  
+    
+    <div id="success" >
+         <img src="/assets/img/R2.png" alt="valider"   >  
+    </div>
+
+    <h4>NOS REJOINDRE</h4>
+    <div class="row">
+     
+       
+      
+       <div class="input-group input-group-icon ">
+          <input type="text"  name="NOM_F"  placeholder="Nom" required />   
+          <div class="input-icon"><i class="fa fa-user"></i></div>    
+        </div>
+          <div class="input-group input-group-icon ">
+          <input type="text"  name="PRENOM_F"  placeholder="Prenom" required />   
+          <div class="input-icon"><i class="fa fa-user"></i></div>    
+        </div>
+
+
+      <div class="input-group input-group-icon">
+        <input type="email" name="EMAIL_F" placeholder="Email" />
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+
+       <div class="input-group input-group-icon">
+          <input type="text"  name="CONTACT_F"  pattern="(00213|\+213|0)(5|6|7)[0-9]{8}"  placeholder="telephone"/>   
+          <div class="input-icon"><i class="fa fa-phone"></i></div>    
+        </div>
+       
+      
+    </div>
+  
+    <div class="row">
+      
+  
+      <div class="col-half">
+        <div class="input-group input-group-icon">
+          <input type="text" name="ADDRESS_F" placeholder="Address" required/>
+          <div class="input-icon"><i class="fa fa-location-arrow"></i></div>   
+        </div>
+      </div>
+      <div class="col-half">
+        <div class="input-group">
+         
+
+           <select name="FONCTION_F">
+             <option>Professeur</option>
+            <option>Docteur</option>
+            <option>Résident</option>
+            <option>Résident</option>
+             <option>Etudiant</option>
+            
+          </select>
+
+           <select name="WILAYA_F">
+            <option>Alger</option>
+            <option>Oran</option>
+          </select>
+         
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Description</h4>
+        <div class="col-half">
+        <div class="input-group">
+         <textarea  name="DESC_F" style="width:100%" ></textarea>
+        
+        </div>
+      </div>
+
+       
+       <div class="col-half">
+        <div class="input-group">
+          <button  type="submit" style="width:100%"  id="BTNvalider" class="button-71" >Valider</button>
+          
+
+        </div>
+      </div>
+      
+       <div id="error" class="mb-0"><i class="fa fa-thumbs-up"></i> <label></label></div>
+
+
+       
+
+
+
+    </div>
+
+
+
+    <div class="row" style="display:none;">
+      <h4>Terms and Conditions</h4>
+      <div class="input-group">
+        <input id="terms" type="checkbox"/>
+        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              
+                <a href=""><img src="/assets/img/logo4.png" alt="" width="120" height="50"></a>
+              
+           
+              <p>
+                Residence CMB N 158 Oued TARFA - El Achour<br>
+               Alger<br><br>
+                <strong>Phone:</strong> +213 544144 4441<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+               
+                <a href="https://web.facebook.com/etabiboofficiel/?_rdc=1&_rdr" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/etabibo_officiel/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                
+                <a href="https://www.linkedin.com/company/etabibo" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>ETABIBO APPLICATION (SOON)</h4>
+            <ul>
+              <li>our vision</li>
+               ETABIBO met à la disposition des professionnels de santé et du grand public une application téléchargeable gratuitement qui met en relation les médecins et les malades, en assurant toutes les interactions qui pourrait avoir lieu entre ces deux protagonistes, facilitant par exemple la prise de rendez-vous pour le malade tout en donnant un outil de gestion de son cabinet au médecin.
+            </ul>
+          </div>
+
+ 
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <!---    <h4> News letter</h4>
+           
+            <form action="/" method="get">
+              <input type="email" name="email"><input type="submit" value="Envoyer">
+            </form>--> 
+
+             <img src="assets/img/sc.png" width="200">
+
+            
+             
+            </form>
+            <a href="https://play.google.com/store/apps/details?id=com.etabibo&pli=1">
+              <button class="button-71">Telecharger l'application</button>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Etabibo</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+   
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="https://play.google.com/store/apps/details?id=com.etabibo&pli=1" class="download d-flex align-items-center justify-content-center"><i class="bi bi-cloud-download"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+
+
+
+   $(document).ready(function(){
+  $("#formation .card").hover(function(){
+   var newStr = $(this).attr('id').replace('F','')
+    //alert(newStr);
+    $('#'+$(this).attr('id')+' .desc').removeClass("cache");
+    $('#'+$(this).attr('id')+' .alltitle').addClass("cache");
+
+  },
+  function(){
+   $('#'+$(this).attr('id')+' .desc').addClass("cache");
+   $('#'+$(this).attr('id')+' .alltitle').removeClass("cache");
+  });
+});
+
+       function mylinkfunction(id) {
+
+       window.location.href="formation/"+id;
+
+       /* need to stop the form sending of the form
+
+        UPDATE as comment: This may not be exactly correct syntax 
+        for stopping a form , look up preventing form submission */
+
+   //    e.preventDefault();
+     //  e.stopPropagation(); 
+
+       }
+
+
+
+
+       
+    function GetCurrent() {
+        var elt;
+       
+        $('#details .container div').find('div').each(function (i) {
+    //   if(i%5==0)  console.log($(this).attr('id'));
+           if ($(this).hasClass('cache')==false && i%5==0) { elt = $(this).attr('id'); }
+        });
+
+        return elt; 
+      
+
+    }
+
+   
+    
+
+
+    function GoToNext(mode, len) {
+       
+        let curr = GetCurrent().replace("EVN", '');
+        let currint = (parseInt(curr)+mode+len)%len;
+        $('#EVN' + curr).addClass('cache');
+        $('#EVN' + currint.toString()).removeClass("cache");
+  
+       
+
+    }
+
+
+      function SetImage(num, id) {
+        let src1 = document.getElementById("i5"+id).src;
+        document.getElementById("i5" + id).src = document.getElementById("i"+num+id).src;
+        document.getElementById("i" + num + id).src = src1;
+
+
+    }
+
+
+      $("#BTNclose").click(function(){
+             $("#myform").hide();
+             $("#error").hide();
+             $('#myform form')[0].reset();
+                                         });
+
+
+          $("#BTNrejoindre").click(function(){
+             $("#myform").show();
+             });
+
+
+
+              const $form = $('#myform form');
+
+$form.on('submit', submitHandler)
+
+function submitHandler (e) {
+  e.preventDefault()
+
+  $.ajax({
+    url: '/formateur/inscription',
+    type:'POST',
+    data: $form.serialize()
+  }).done(response => {
+    if(response=="1") { $("#error").show(); $("#error label").text("operation valide"); $("#error").css("color","green");
+     $("#error i").removeClass('fa-exclamation');
+    $("#error i").addClass('fa-thumbs-up');
+     $('#myform form')[0].reset();
+  
+    
+  
+      
+     }
+
+    else { $("#error").show(); 
+     $("#error i").removeClass('fa-thumbs-up');
+    $("#error i").addClass('fa-exclamation');
+    $("#error label").text("erreur email"); $("#error").css("color","red");}
+  })
+}
+
+
+
+
+
+   const $formcontact = $('#contact form');
+
+$formcontact.on('submit', function(e){
+  e.preventDefault()
+
+  $.ajax({
+    url: '/contact',
+    type:'POST',
+    data: $formcontact.serialize()
+  }).done(response => {
+    if(response=="1") { 
+  
+    
+
+   $('.sent-message').show();
+   
+     $('#contact form')[0].reset();
+      
+     }
+
+    else {    $('.error-message').show();}
+  })
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.js"></script>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+ 
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+   
+ 
+</body>
+
+</html>
